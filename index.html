@@ -1,45 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banner</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
 
-      body {
-        width: 100%;
-        height: 100%;
-        font-family: sans-serif;
-        background: #f8f9fa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      font-size: 14px;
+      padding: 4px 12px;
+    }
 
-      .banner {
-        width: 100%;
-        max-width: 600px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #6c63ff, #6ec6ff);
-        color: white;
-        font-size: 1rem;
-        padding: 0 1rem;
-        text-align: center;
-        border-radius: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="banner">
-      <p>Esse é o banner publicitário. Personalize como quiser!</p>
+    .carousel {
+      /* height: 60px; */
+    }
+
+    .carousel-inner img {
+      object-fit: cover;
+      /* height: 60px; */
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-around;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Parceiro Oficial</header>
+
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://placehold.co/300x100?text=1" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/300x100?text=2" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/300x100?text=3" class="d-block w-100" alt="...">
+      </div>
     </div>
-  </body>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="#">Promoções</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
