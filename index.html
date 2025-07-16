@@ -24,15 +24,18 @@
         height: auto;
         width: 132px;
         padding: 2px 0;
-      }
-
-      .carousel {
-        /* height: 60px; */
-      }
+      }    
 
       .carousel-inner img {
         object-fit: cover;
-        height: 171px;
+        height: 226px;
+      }
+      
+      /* Se a altura da tela for menor que 780px */
+      @media (max-height: 780px) {
+        .carousel-inner img {
+          height: 171px; 
+        }
       }
 
       .carousel-indicators {
