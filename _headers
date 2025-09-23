@@ -1,4 +1,4 @@
 /*
 Cross-Origin-Embedder-Policy: require-corp
 Cross-Origin-Resource-Policy: cross-origin
-Content-Security-Policy: frame-ancestors http://localhost https://h.visitante.in 'self';
+Content-Security-Policy: frame-ancestors http://localhost:3003 https://h.visitante.in 'self';
